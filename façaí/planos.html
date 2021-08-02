@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" href="imagens/facai.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/planos-style.css">
+    <link rel="stylesheet" href="css/nav-style.css">
+    <link rel="stylesheet" href="css/footer-style.css">
+
+    <script src="js/script.JS" defer></script>
+    <script src="js/script-Planos.JS" defer></script>
+    <script src="js/script-Planos-register.JS" defer></script>
+
+    <script src="https://use.fontawesome.com/a2aaf93c90.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Planos - Façaí</title>
+    
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            
+            <div class="content-header">
+
+                <picture class="logo">
+                    <a href="index.html">
+                        <source media="(max-width: 500px )" srcset="imagens/logofacai.png" type="image/png">
+                        <img class="logo" src="imagens/logo.png" alt="Logo Façaí">
+                    </a>
+                </picture>
+
+                <div class="open-nav" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <nav class="menu">
+                    <ul class="list-menu">
+                        <li><a href="index.html">Página Inicial</a></li>
+                        <li><a href="delivery.html">Delivery</a></li>
+                        <li><a href="Sobre-o-clube.html">Sobre o Clube</a></li>
+                        <li><a href="Eventos.html">Para Eventos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li class="btn-area-de-membros"><a href="area-de-membros.html">Área de membros</a></li>
+                        <li><a id="i-whatsapp"  href="https://wa.me/558382108331" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+                        <li><a id="i-instagram" href="https://www.instagram.com/facaidoseujeito" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        <li><a id="i-facebook" href="https://www.facebook.com/facaidoseujeito" target="_blank"><i class="fa fa-facebook"></i></a></li>
+
+                        <div class="lista-menu-mobile">
+                            <li id="i-whatsapp-mobile"><a  href="https://wa.me/558382108331" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+                            <li id="i-instagram-mobile"><a href="https://www.instagram.com/facaidoseujeito" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            <li id="i-facebook-mobile"><a href="https://www.facebook.com/facaidoseujeito" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        </div>
+                    </ul>
+                </nav>
+
+            </div> 
+
+        </div>
+    </header>
+
+    <main>
+    <section>
+        <a name="planos"><h2 class="escolha_plano">Faça Parte do Clube! Escolha Seu Plano:<hr></h2></a>
+    </section>
+
+    <div class="secao_planos">
+        <div class="box">
+
+            <div class="box-caixa-personalizada">
+                <h3 class="titulo-caixa-personalizada">Caso não queira assinar você pode pedir uma única unidade e Montar o Kit do Seu Jeito, seja pra você ou para <strong>presentear alguém!</strong></h3>
+                <button class="btn_caixa-personalizada" href="#kit">Comprar</button>
+            </div>
+            
+            <div class="escolher_recorrencia">
+                <h3>Recorrência:</h3>
+                <ul class="btn-recorrencia">
+                    <li><button onclick="botao_clicado2(this)" id="semestral" href="#planos">Semestral</button></li> <br>
+                    <li><button onclick="botao_clicado3(this)" id="anual" href="#planos">Anual</button></li>
+                </ul>
+            </div>
+        </div>
+
+            
+
+        <div class="box-planos">
+
+            <div class="box-plano-basico">
+                <div class="titulo_plano_basico"><h3>Básico - Fã Façaí</h3></div>
+                <article class="plano_basico">
+                    <div class="valor-plano">
+                        <h4 id="basicoValor">R$87</h4> <p>/ Por mês</p>
+                    </div>
+                    
+                    <button  onclick="botao_basico(this)" id="btn-plano-compra-basico">Assinar</button>
+
+                    <ul id="lista-planos">
+                        <li><i id="colorgreen" class="fa fa-check"></i> <p id="Basico1">Área VIP</p></li> <br>
+                        <li><i id="colorgreen" class="fa fa-check"></i><p id="Basico2">Sorteio PIX - R$100 (Mensalmente)</p> </li> <br>
+                        <li><i id="colorgreen" class="fa fa-check"></i><p id="Basico3">Mimos</p></li> <br>
+                        <li><i id="colorgreen" class="fa fa-check"></i><p id="Basico4">Pague por 1KG de Açaí e leve +1KG grátis (Mensalmente)</p></li> <br>
+                    </ul> 
+                    <ul id="lista-hide-basico">
+                        <li><i id="colorgreen" class="fa fa-check"></i> <span id="Basico5">Você tem 5% de desconto nos produtos de uma loja Física Façaí</span></li> <br>
+                        <li><i id="colorgreen" class="fa fa-check"></i> <span id="Basico6">4 porções de 5 opções de acompanhamentos (Mensalmente)</span></li> <br>
+                        <li><i id="colorred" class="fa fa-times"></i> <span id="Basico7">Acesso a um serviço de Streaming (Netflix, Disney+, Telecine, Spotify, Amazon Prime ou Globo Play)</span></li> <br>
+                        <li> <i id="colorred" class="fa fa-times"></i><pspan id="Basico8">Área de membros</span></li> <br>
+                        <li><i id="colorred" class="fa fa-times"></i> <span id="Basico9">Eventos Exclusivos</span></li> <br>
+                        <li><i id="colorred" class="fa fa-times"></i> <span id="Basico10">Sorteios de Viagem de Fim de Ano</span></li> <br>
+                        <li><i id="colorred" class="fa fa-times"></i> <span id="Basico11">Caixas Temáticas</span></li>
+                    </ul>
+                        <button id="ShowUl-basico">Ver todos</button>
+                </article>
+            </div>
+            
+            
+                <div class=box-plano-medio>
+                    <div class="titulo_plano_medio"><h3>Médio - Amigos Faceiros</h3></div>
+                    <article class="plano_medio">
+                        <div class="valor-plano">
+                            <h4 id="medioValor">R$187</h4> <p>/ Por mês</p>
+                        </div>
+                        <button onclick="botao_medio(this)"  id="btn-plano-compra-medio">Assinar</button>
+
+                        <ul id="lista-planos">
+                            <li><i id="colorgreen" class="fa fa-check"></i> <span id="medio1">Área VIP</span></li> <br>
+                            <li><i id="colorgreen" class="fa fa-check"></i> <p id="medio2">Sorteio PIX - R$150 (Mensalmente)</p></li> <br>
+                            <li><i id="colorgreen" class="fa fa-check"></i> <span id="medio3">Mimos</span></li> <br>
+                            <li><i id="colorgreen" class="fa fa-check"></i> <span id="medio4">Pague por 3KG de Açaí e leve +3KG grátis (Mensalmente)</span></li> <br>
+                            <li><i id="colorgreen" class="fa fa-check"></i> <span id="medio5">Você tem 10% de desconto nos produtos de uma loja Física Façaí</span></li> <br>
+                        </ul>  
+                        <ul id="lista-hide-medio">
+                            <li><i id="colorgreen" class="fa fa-check"></i> <span id="medio6">4 porções de 10 opções de acompanhamentos (Mensalmente)</span></li> <br>
+                            <li><i id="colorgreen" class="fa fa-check"></i> <span id="medio7">Acesso a um serviço de Streaming (Netflix, Disney+, Telecine, Spotify, Amazon Prime ou Globo Play)</span></li> <br>
+                            <li><i id="colorred" class="fa fa-times"></i> <span id="medio8">Área de membros</span></li> <br>
+                            <li><i id="colorred" class="fa fa-times"></i> <span id="medio9">Eventos Exclusivos</span></li> <br>
+                            <li><i id="colorred" class="fa fa-times"></i> <span id="medio10">Sorteios de Viagem de Fim de Ano</span></li> <br>
+                            <li><i id="colorred" class="fa fa-times"></i> <span id="medio11">Caixas Temáticas</span></li> <br> <br>
+                        </ul>
+                        <button id="ShowUl-medio">Ver todos</button>
+                    </article>
+                </div>
+            <div class=box-plano-avancado>
+                <div class="titulo_plano_avancado"><h3>Avançado - Família Façaí</h3></div>
+                <article class="plano_avancado">
+                    <div class="valor-plano">
+                        <h4 id="avancadoValor">R$287</h4> <p>/ Por mês</p>
+                    </div>
+                    
+                    <button onclick="botao_avancado(this)" id="btn-plano-compra-avancado">Assinar</button>
+
+                    <ul id="lista-planos">
+                        <li><i id="colorgreen" class="fa fa-check"></i> <span id="avancado1">Área VIP</span></li> <br>
+                        <li><i id="colorgreen" class="fa fa-check"></i> <span id="avancado2">Sorteio PIX - R$200 (Mensalmente)</span></li> <br>
+                        <li><i id="colorgreen" class="fa fa-check"></i> <span id="avancado3">Mimos</span></li> <br>
+                        <li><i id="colorgreen" class="fa fa-check"></i> <span id="avancado4">Pague por 5KG de Açaí e leve +5KG grátis (Mensalmente)</span></li> <br>
+                    </ul>  
+                    <ul id="lista-hide-avancado">
+                        <li><i id="colorgreen" class="fa fa-check"></i> <span id="avancado5">Você tem 21% de desconto nos produtos de uma loja Física Façaí</span></li> <br>
+                        <li><i id="colorgreen" class="fa fa-check"></i> <span id="avancado6">4 porções de 20 opções de acompanhamentos (Mensalmente)</span></li> <br>
+                        <li><i id="colorgreen" class="fa fa-check"></i><span id="avancado7"> Acesso a um serviço de Streaming (Netflix, Disney+, Telecine, Spotify, Amazon Prime ou Globo Play)</span></li> <br>
+                        <li><i id="colorgreen" class="fa fa-check"></i> <span id="avancado8">Área de membros</span></li> <br>
+                        <li><i id="colorred" class="fa fa-times"></i> <span id="avancado9">Eventos Exclusivos</span></li> <br>
+                        <li><i id="colorred" class="fa fa-times"></i> <span id="avancado10">Sorteios de Viagem de Fim de Ano</span></li> <br>
+                        <li><i id="colorred" class="fa fa-times"></i> <span id="avancado11">Caixas Temáticas</span></li>
+                    </ul>
+                    <button id="ShowUl-avancado">Ver todos</button>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+    <div class="foto-e-lista-vantagens">
+            <div class="foto-vantagens"><img class="fotovantagens" src="imagens/foto-facai.jpg" alt="Façaí"></div>
+            <div class="lista">
+                
+                <div class="titulo-lista-vantagens">
+                    <h3>Vantagens em assinar</h3>
+                </div>
+
+                <ul class="lista-vantagens">
+                    
+                    <li><i class="fa fa-plane"></i> Sorteios de viagens</li> <br>
+                    <li><i class="fa fa-dollar"></i> Sorteios de PIX</li> <br>
+                    <li><i class="fa fa-gift"></i> Mimos Exclusivos</li> <br>
+                    <li><i class="fa fa-money"></i> Açaí Grátis</li> <br>
+                    <li><i class="fa fa-percent"></i> Descontos nas lojas façaí</li> <br>
+                    <li><i class="fa fa-signal"></i> Acesso gratuio a serviços de Streaming </li> <br>
+                    <li><i class="fa fa-users"></i> Área de Membros no Site</li> <br>
+                    <li><i class="fa fa-glass"></i> Acesso a Eventos Exclusivos</li> 
+                </ul>
+            </div>
+    </div>
+
+    <div class="depoimentos">
+        <h2>Depoimento de Clientes</h2>
+        <div class="fotos-depoimentos">
+            <img src="imagens/depoimento-carol.jpg" alt="">
+            <img src="imagens/depoimento-carol.jpg" alt="">
+            <img src="imagens/depoimento-carol.jpg" alt="">
+            <img src="imagens/depoimento-carol.jpg" alt="">
+            <img src="imagens/depoimento-carol.jpg" alt="">
+            <img src="imagens/depoimento-carol.jpg" alt="">
+        </div>
+    </div>
+    <div class="para-empresas">
+        <h2>Para empresas</h2>
+        <p>Surpreenda seus clientes e colaboradores com a Caixa Colonial. <a href="Para-Empresas.html">Saiba mais aqui</a></p>
+    </div>
+
+
+    <!--Seção complementos-->
+    <div id="section-complementos">
+        
+        <div class="sair">
+            <button class="close" onclick="botao_close(this)"><i id="colorred" class="fa fa-times"></i></button>
+            <h1 id="erro"></h1>
+        </div>
+        
+        <div id="escolha-complementos">
+
+            <h2>Escolha quais acompanhamentos você deseja receber nos seus kits</h2>
+            <h1 id="selecionado"></h1>
+            <h3 id="p1">Frutas</h3>
+            <ul id="p11">
+                <li>
+                    <img src="imagens/complementos/morango.jpg" alt="morango">
+                    <p>Morango</p>
+                    <input type="checkbox" name="selection" id="nutela" class="checkbox">
+                </li>
+                <li>
+                    <img src="imagens/complementos/kiwi.jpg" alt="kiwi">
+                    <p>Kiwi</p>
+                    <input type="checkbox" name="selection" id="kiwi" class="checkbox">
+                </li>
+                <li>
+                    <img src="imagens/complementos/banana.jpg" alt="morango">
+                    <p>Banana</p>
+                    <input type="checkbox" name="selection" id="banana" class="checkbox">
+                </li>
+            </ul>
+         <h3 id="p2">Diversos</h3>
+            <ul id="p22">
+                <li>
+                    <img src="imagens/complementos/nutella.jpg" alt="morango">
+                    <p>Nutella</p>
+                    <input type="checkbox" name="selection" id="nutella" class="checkbox">
+                </li>
+                <li>
+                    <img src="imagens/complementos/amedoin.jpg" alt="morango">
+                    <p>Amedoin</p>
+                    <input type="checkbox" name="selection" id="amedoin" class="checkbox">
+                </li>
+                <li>
+                    <img src="imagens/complementos/mel.jpg" alt="morango">
+                    <p>Mel</p>
+                    <input type="checkbox" name="selection" id="mel" class="checkbox">
+                </li>
+                <li>
+                    <img src="imagens/complementos/paçoca.jpg" alt="morango">
+                    <p>Paçoca</p>
+                    <input type="checkbox" name="selection" id="pacoca" class="checkbox">
+                </li>
+                <li>
+                    <img src="imagens/complementos/bispreto.jpg" alt="morango">
+                    <p>Bis Preto</p>
+                    <input type="checkbox" name="selection" id="bis-preto" class="checkbox">
+                </li>
+                <li>
+                    <img src="imagens/complementos/bisbranco.png" alt="morango">
+                    <p>Bis branco</p>
+                    <input type="checkbox" name="selection" id="bis-branco" class="checkbox">
+                </li>
+                <li>
+                    <img src="imagens/complementos/confetes.jpg" alt="morango">
+                    <p>Confetes</p>
+                    <input type="checkbox" name="selection" id="confetes" class="checkbox">
+                </li>
+                <li>
+                    <img src="imagens/complementos/farinhalactea.jpeg" alt="morango">
+                    <p>Farinha láctea</p>
+                    <input type="checkbox" name="selection" id="farinha-lactea" class="checkbox">
+                </li>
+                <li>
+                    <img src="imagens/complementos/finibananinha.jpg" alt="morango">
+                    <p>Fini Bananinha</p>
+                    <input type="checkbox" name="selection" id="fini-bananinha" class="checkbox">
+                </li>
+                <li>
+                    <img src="imagens/complementos/finidentadura.jpg" alt="morango">
+                    <p>Fini Dentadura</p>
+                    <input type="checkbox" name="selection" id="fini-dentadura" class="checkbox">
+                </li>
+                <li>
+                    <img src="imagens/complementos/marshmallow.jpg" alt="morango">
+                    <p>Marshmallow</p>
+                    <input type="checkbox" name="selection" id="marshmallow" class="checkbox">
+                </li>
+                <li>
+                    <img src="imagens/complementos/gotasdechocolate.jpg" alt="morango">
+                    <p>Gotas de chocolate</p>
+                    <input type="checkbox" name="selection" id="gotas-de-chocolates" class="checkbox">
+                </li>
+                <li>
+                    <img src="imagens/complementos/granola.jpg" alt="morango">
+                    <p>Granola</p>
+                    <input type="checkbox" name="selection" id="granola" class="checkbox">
+                </li>
+                <li>
+                    <img src="imagens/complementos/jujuba.jpg" alt="morango">
+                    <p>Jujuba</p>
+                    <input type="checkbox" name="selection" id="jujuba" class="checkbox">
+                </li>
+                <li>
+                    <img src="imagens/complementos/kitkatpreto.jpg" alt="morango">
+                    <p>Kit Kat preto</p>
+                    <input type="checkbox" name="selection" id="kit-ket-preto" class="checkbox">
+                </li>
+                <li>
+                    <img src="imagens/complementos/kitkatbranco.jpg" alt="morango">
+                    <p>Kit Ket branco</p>
+                    <input type="checkbox" name="selection" id="kit-ket-branco" class="checkbox">
+                </li>
+                <li>
+                    <img src="imagens/complementos/leitecondensado.jpg" alt="morango">
+                    <p>Leite Condensado</p>
+                    <input type="checkbox" name="selection" id="leite-condensado" class="checkbox">
+                </li>
+                <li>
+                    <img src="imagens/complementos/leiteninho.jpg" alt="morango">
+                    <p>Leite ninho</p>
+                    <input type="checkbox" name="selection" id="leite-ninho" class="checkbox">
+                </li>
+                <li>
+                    <img src="imagens/complementos/ovomaltine.jpg" alt="morango">
+                    <p>ovomaltine</p>
+                    <input type="checkbox" name="selection" id="ovomaltine" class="checkbox">
+                </li>
+                <li>
+                    <img src="imagens/complementos/oreo.jpg" alt="morango">
+                    <p>Óreo</p>
+                    <input type="checkbox" name="selection" id="oreo" class="checkbox">
+                </li>
+                <li>
+                    <img src="imagens/complementos/sonhodevalsa.png" alt="morango">
+                    <p>Sonho de valsa</p>
+                    <input type="checkbox" name="selection" id="sonho-de-valsa" class="checkbox">
+                </li>
+                <li>
+                    <img src="imagens/complementos/serenatadeamor.jpg" alt="morango">
+                    <p>Serenata de amor</p>
+                    <input type="checkbox" name="selection" id="serenata-de-amor" class="checkbox">
+                </li>
+                <li>
+                    <img src="imagens/complementos/ourobranco.jpg" alt="morango">
+                    <p>ouro branco</p>
+                    <input type="checkbox" name="selection" id="ourobranco" class="checkbox">
+                </li>
+                
+
+            </ul>
+            
+           
+            </div>
+            <div class="avancar"> <p class="error-validation tamplate"></p>
+                <div class="bolinhas">
+                    <p class="ball1"></p><p class="ball2"></p> <p class="ball3"></p>
+                </div>
+                <button class="btn-avancar" onclick="proximo(this)" id="proximo">Avançar</button>
+            </div>
+              
+    </div>
+
+
+    <!--------Seção cadrasto------->
+    <div class="section-register" id="section-register">
+
+        <div class="sair-register">
+           
+            <button class="close" onclick="botao_close2(this)"><i id="colorred" class="fa fa-times"></i></button>
+        </div>
+
+        <div class="main-container" id="main-container">
+            <h1>Para entrar na família Façaí, primeiro preencha os campos abaixo</h1>
+                <form id="register-form">
+                    <div class="full-box">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="Digite seu e-mail" data-min-length='3' data-required data-email-validate>
+                    </div>
+                    <div class="half-box spacing">
+                        <label for="name">Nome</label>
+                        <input type="text" name="name" id="name" placeholder="Digite seu nome" data-max-length="16" data-only-letters>
+                    </div>
+                    <div class="half-box">
+                        <label for="lastname">Sobrenome</label>
+                        <input type="text" name="lastname" id="lastname" placeholder="Digite seu sobrenome">
+                    </div>
+                    <div class="full-box">
+                        <label for="telephone">Número de telefone</label>
+                        <input type="text" name="telephone" id="telephone" placeholder="Digite seu número" data-required>
+                    </div>
+                    <div class="informacoes">
+                        <h2>crie uma senha, você irá usar ela para acessar todo o conteúdo exclusivo na área de membros </h2>
+                    </div>
+                    <div class="full-box">
+                        <label for="password">Senha</label>
+                        <input type="password" name="password" id="password" placeholder="Digite a sua Senha" data-required data-password-validate>
+                    </div>
+                    <div class="full-box">
+                        <label for="passconfirmation">Confirmarção de senha</label>
+                        <input type="password" name="passconfirmation" id="passconfirmation" placeholder="Confirme a sua senha" data-equal="password" data-required>
+                    </div>
+                </form>
+        
+            </div>
+            <div class="avancar-register">
+                <div class="bolinhas-register">
+                    <p class="ball1-register"></p><p class="ball2-register"></p> <p class="ball3-register"></p>
+                </div>
+                <button class="btn-voltar-register" onclick="backAll(this)" id="btn-back">Voltar</button>
+                <button class="btn-avancar-register" onclick="proximoAll(this)" id="btn-submity">Avançar</button>
+            </div>
+    </div>
+
+    <!----------Chackout------------>
+    <div class="section-checkout">
+
+        <div class="sair-checkout">
+            <button class="close" ><i id="colorred" class="fa fa-times"></i></button>
+        </div>
+
+        <div class="box-checkout">
+            <h2>Plano escolhido:</h2>
+            <p>Plano Médio</p>
+            <h2>Complementos escolhidos:</h2>
+            <p>Nutela, Granola, leite Condensado e Morango</p>
+            <h3>Total: R$150</h3>
+
+            <form class="checkout">
+                  <input type="text" class="checkout-input checkout-name" placeholder="Your name">
+                  <input type="text" class="checkout-input checkout-exp" placeholder="MM">
+                  <input type="text" class="checkout-input checkout-exp" placeholder="YY">
+                
+                  <input type="text" class="checkout-input checkout-card" placeholder="4111 1111 1111 1111">
+                  <input type="text" class="checkout-input checkout-cvc" placeholder="CVC">
+               
+                  <input type="submit" value="Purchase" class="checkout-btn">
+              </form>
+        </div>
+
+        <div class="avancar-checkout">
+            <div class="bolinhas-checkout">
+                <p class="ball1-checkout"></p><p class="ball2-checkout"></p> <p class="ball3-checkout"></p>
+            </div>
+            <button class="btn-voltar-checkout">Voltar</button>
+        </div>
+    </div>
+
+
+</main>
+
+<footer>
+    <div class="largura-maxima-rodape">
+        <div class="prerodape">
+            <div id="menu-rodape" class="menu-rodape">
+                <h3>Façaí Do Seu Jeito</h3>
+                <ul class="list-menu">
+                    <li><a href="index.html">Página Inicial</a></li>
+                    <li><a href="planos.html">Planos</a></li>
+                    <li><a href="planos.html">Sobre o Clube</a></li>
+                    <li><a href="#duvidas">Dúvidas</a></li>
+                    <li><a href="#">Contato</a></li>
+                    
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+            <div id="menu-rodape" class="redes-sociais">
+                <h3>CURTA E FALE CONOSCO</h3>
+                <ul>
+                    <li><a href="https://wa.me/558382108331" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+                    <li><a href="https://www.instagram.com/facaidoseujeito" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/facaidoseujeito" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                </ul>
+            </div>
+            <div id="menu-rodape" class="formas-de-pagamento">
+                <h3>FORMAS DE PAGAMENTO</h3>
+                <img class="pagamento" src="imagens/Formasdepagamento1.png" alt="Formas de pagamento">
+            </div>
+        </div>
+        
+        <div class="rodape">
+                <p>Todos os direitos resevados &copy;Façaí do seu jeito <br> Centro - Princesa Isabel - Paraíba - CEP: 00000-000 | CNPJ: 00.000.000/0000-00</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/facai.ico" type="image/x-icon">
+    
+    
+    <meta name="theme-color" content="#9C117E">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" sizes="192x192" href="imagens/icon.png">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#9C117E">
+  <meta name="apple-mobile-web-app-title" content="Façaí">
+  <link rel="apple-touch-icon" href="imagens/logo.png">
+
+  <meta name="application-name" content="Façaí"/>
+  <meta name="msapplication-TileColor" content="#9C117E"/>
+
+
+
+    <link rel="stylesheet" href="css/nav-delivery-style.css">
+    <link rel="stylesheet" href="css/footer-style.css">
+    <link rel="stylesheet" href="css/delivery-style.css">
+    <script src="js/script-delivery.JS" defer></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700;900&display=swap" rel="stylesheet">
+
+    <script src="https://use.fontawesome.com/a2aaf93c90.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+    <link href='https://unpkg.com/boxicons@2.0.8/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Faça seu Pedido | Façaí</title>
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            
+            <div class="content-header">
+
+                
+                    <picture class="logo">
+                        <a href="index.html">
+                            <source media="(max-width: 500px )" srcset="imagens/logofacai.png" type="image/png">
+                            <img class="logo" src="imagens/logo.png" alt="Logo Façaí">
+                        </a>
+                    </picture>
+                
+
+                    <div class="ContainerSearech">  
+                        <div class="pesquisa">
+                            <input type="text" placeholder="Pesquisar por item">
+                            <i class='bx bx-search'></i>
+                         </div>
+                    </div>
+
+                    
+                <div class="open-nav" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                
+                <nav class="menu">
+
+                    
+                    
+                    <ul class="list-menu">
+                        <li>
+                            
+                        </li>
+                        <li><a href="planos.html">Ver Planos</a></li>
+                        <li class="contato"><a href="contato.html">Contato</a></li>
+                        <li class="btn-area-de-membros"><a href="area-de-membros.html">Área de membros</a></li>
+                        <li><a id="i-whatsapp"  href="https://wa.me/558382108331" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+                        <li><a id="i-instagram" href="https://www.instagram.com/facaidoseujeito" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        <li><a id="i-facebook" href="https://www.facebook.com/facaidoseujeito" target="_blank"><i class="fa fa-facebook"></i></a></li>
+
+                        <li id="BtnLogin"><a href="login.html">Login</a></li>
+
+                        <div class="lista-menu-mobile">
+                            <li id="i-whatsapp-mobile"><a  href="https://wa.me/558382108331" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+                            <li id="i-instagram-mobile"><a href="https://www.instagram.com/facaidoseujeito" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            <li id="i-facebook-mobile"><a href="https://www.facebook.com/facaidoseujeito" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        </div>
+                    </ul>
+                </nav>
+
+            </div> 
+
+        </div>
+    </header>
+
+    <main>
+      
+            
+        <div class="section-delivery">
+
+            <div id="container-popup" class="section1">
+                <div class="share">
+
+                    <button id="close-popup"><i id="colorred" class="fa fa-times"></i></button>
+
+                    <img src="imagens/confetes.gif" alt="">
+                    <div class="texto">
+                        <h1>Convide Seus Amigos!</h1>
+                        <p>A cada amigo novo que vinher através de você, você e ele ganham R$2 de desconto na compra de qualquer produto</p>
+                    </div>
+                    <button class="btn-share">Convidar</button>
+                </div>
+            </div>
+
+
+<!------------------------------------------------------------------------------->
+            
+
+            <div class="produtos">
+                <a class="titulo" name="produtos">O que você deseja saborear hoje?</a>
+               
+                
+                <div class="escolher-produto">
+                    <div class="box-escolher">
+                         <div class="categorias" id="categorias">
+
+                            <div id="btn-acai">
+                                <img src="imagens/acai.png" alt="">
+                                <h2>Açaí</h2>
+                            </div>
+
+                            <div id="btn-cremes">
+                                <img src="imagens/cremes.png" alt="">
+                                <h2>Cremes</h2>
+                            </div>
+                            <div id="btn-cupuacu">
+                                <img src="imagens/cupuacu.png" alt="">
+                                <h2>Cupuaçu</h2>
+                            </div>
+                            <div id="btn-casadinho">
+                                <img src="imagens/casadinho.png" alt="">
+                                <h2>Casadinho</h2>
+                            </div>
+                            <div id="btn-mix">
+                                <img src="imagens/mix.png" alt="">
+                                <h2>Mix De Sabores</h2>
+                            </div>
+                        </div>
+
+
+                        <!--<div class="SubCategorias" id="SubCategorias">
+
+                            <div id="BtnCremeMaracuja">
+                                <div class="imagemProduto">
+                                    <img src="imagens/acai.png" alt="">
+                                </div>
+                                <h2>Maracujá</h2>
+                            </div>
+
+                            <div id="BtnCremeNinho">
+                                <div class="imagemProduto">
+                                    <img src="imagens/cremes.png" alt="">
+                                </div>
+                                <h2>Ninho</h2>
+                            </div>
+                            <div id="BtnCremeChoconute">
+                                <div class="imagemProduto">
+                                    <img src="imagens/cupuacu.png" alt="">
+                                </div>
+                                <h2>Choconute</h2>
+                            </div>
+                            <div id="BtnCremeMaracuja">
+                                <div class="imagemProduto">
+                                    <img src="imagens/casadinho.png" alt="">
+                                </div>
+                                <h2>Maracuja</h2>
+                            </div>
+                        </div>-->
+
+                    </div>
+
+
+                     </div>
+                     
+
+                     <ul id="list-acai">
+                         <h2>Açaí</h2>
+                        <li onclick="produto.salvar()" onclick="produto.lerDados1()" > <p>Açaí 250ml +7 complementos </p><p class="preco">R$12,00</p></li>
+                        <li onclick="produto.salvar2()" onclick="produto.lerDados2()"> <p>Açaí 330ml +7 complementos</p> <p class="preco">R$15,00</p></li>
+                        <li onclick="produto.salvar3()" onclick="produto.lerDados3()"><p>Açaí 500ml +7 complementos</p> <p class="preco">R$23,00</p></li>
+                        <li onclick="produto.salvar4()" onclick="produto.lerDados4()">  <p>Açaí 770ml +10 complementos</p> <p class="preco">R$35,00</p></li>
+                        <li onclick="produto.salvar5()" onclick="produto.lerDados5()">  <p>Açaí 1kg +10 complementos</p> <p class="preco">R$45,00</p></li>
+                    </ul>
+
+                    <ul id="list-cremes">
+                        <h2>Cremes</h2>
+                        <h2>Choconute</h2>
+                            <li onclick="produto.salvar6()" onclick="produto.lerDados6()"> <p>Choconute 250ml +7 complementos </p><p class="preco">R$14,00</p> </li>
+                            <li onclick="produto.salvar7()" onclick="produto.lerDados7()"> <p>Choconute 330ml +7 complementos</p> <p class="preco">R$17,00</p> </li>
+                            <li onclick="produto.salvar8()" onclick="produto.lerDados8()"><p>Choconute 500ml +7 complementos</p> <p class="preco">R$23,00</p> </li>
+                            <li onclick="produto.salvar9()" onclick="produto.lerDados9()">  <p>Choconute 770ml +10 complementos</p> <p class="preco">R$35,00</p> </li>
+                            <li onclick="produto.salvar10()" onclick="produto.lerDados10()">  <p>Choconute 1kg +10 complementos</p> <p class="preco">R$45,00</p> </li>
+                        <h2>Morango</h2>
+                            <li onclick="produto.salvar6()" onclick="produto.lerDados6()"> <p>Morango 250ml +7 complementos </p><p class="preco">R$14,00</p> </li>
+                            <li onclick="produto.salvar7()" onclick="produto.lerDados7()"> <p>Morango 330ml +7 complementos</p> <p class="preco">R$17,00</p> </li>
+                            <li onclick="produto.salvar8()" onclick="produto.lerDados8()"><p>Morango 500ml +7 complementos</p> <p class="preco">R$23,00</p> </li>
+                            <li onclick="produto.salvar9()" onclick="produto.lerDados9()">  <p>Morango 770ml +10 complementos</p> <p class="preco">R$35,00</p> </li>
+                            <li onclick="produto.salvar10()" onclick="produto.lerDados10()">  <p>Morango 1kg +10 complementos</p> <p class="preco">R$45,00</p> </li>
+                        <h2>Maracujá</h2>
+                            <li onclick="produto.salvar6()" onclick="produto.lerDados6()"> <p>Maracujá 250ml +7 complementos </p><p class="preco">R$14,00</p> </li>
+                            <li onclick="produto.salvar7()" onclick="produto.lerDados7()"> <p>Maracujá 330ml +7 complementos</p> <p class="preco">R$17,00</p> </li>
+                            <li onclick="produto.salvar8()" onclick="produto.lerDados8()"><p>Maracujá 500ml +7 complementos</p> <p class="preco">R$23,00</p> </li>
+                            <li onclick="produto.salvar9()" onclick="produto.lerDados9()">  <p>Maracujá 770ml +10 complementos</p> <p class="preco">R$35,00</p> </li>
+                            <li onclick="produto.salvar10()" onclick="produto.lerDados10()">  <p>Maracujá 1kg +10 complementos</p> <p class="preco">R$45,00</p> </li>
+                        <h2>Ninho</h2>
+                            <li onclick="produto.salvar6()" onclick="produto.lerDados6()"> <p>Ninho 250ml +7 complementos </p><p class="preco">R$14,00</p> </li>
+                            <li onclick="produto.salvar7()" onclick="produto.lerDados7()"> <p>Ninho 330ml +7 complementos</p> <p class="preco">R$17,00</p> </li>
+                            <li onclick="produto.salvar8()" onclick="produto.lerDados8()"><p>Ninho 500ml +7 complementos</p> <p class="preco">R$23,00</p> </li>
+                            <li onclick="produto.salvar9()" onclick="produto.lerDados9()">  <p>Ninho 770ml +10 complementos</p> <p class="preco">R$35,00</p> </li>
+                            <li onclick="produto.salvar10()" onclick="produto.lerDados10()">  <p>Ninho 1kg +10 complementos</p> <p class="preco">R$45,00</p> </li>
+                    </ul>
+
+                    <ul id="list-cupuacu">
+                        <h2>Cupuaçu</h2>
+                        <li onclick="produto.salvar()" onclick="produto.lerDados1()"> <p>Cupuçu 250ml +7 complementos </p><p class="preco">R$12,00</p> </li>
+                        <li onclick="produto.salvar2()" onclick="produto.lerDados2()"> <p>Cupuçu 330ml +7 complementos</p> <p class="preco">R$15,00</p> </li>
+                        <li  onclick="produto.salvar3()" onclick="produto.lerDados3()"><p>Cupuçu 500ml +7 complementos</p> <p class="preco">R$23,00</p> </li>
+                        <li onclick="produto.salvar4()" onclick="produto.lerDados4()">  <p>Cupuçu 770ml +10 complementos</p> <p class="preco">R$35,00</p> </li>
+                        <li onclick="produto.salvar5()" onclick="produto.lerDados5()">  <p>Cupuçu 1kg +10 complementos</p> <p class="preco">R$45,00</p> </li>
+                    </ul>
+
+                    <ul id="list-casadinho">
+                        <h2>Casadinho</h2>
+                        <li onclick="produto.salvar()" onclick="produto.lerDados1()"> <p>Casadinho 250ml +7 complementos </p><p class="preco">R$12,00</p> </li>
+                        <li onclick="produto.salvar2()" onclick="produto.lerDados2()"> <p>Casadinho 330ml +7 complementos</p> <p class="preco">R$15,00</p> </li>
+                        <li onclick="produto.salvar3()"  onclick="produto.lerDados3()"> <p>Casadinho 500ml +7 complementos</p> <p class="preco">R$23,00</p> </li>
+                        <li  onclick="produto.salvar4()" onclick="produto.lerDados4()">  <p>Casadinho 770ml +10 complementos</p> <p class="preco">R$35,00</p> </li>
+                        <li onclick="produto.salvar5()" onclick="produto.lerDados5()">  <p>Casadinho 1kg +10 complementos</p> <p class="preco">R$45,00</p> </li>
+                    </ul>
+
+                    <ul id="list-mix">
+                        <h2>Mix</h2>
+                        <li onclick="produto.salvar()" onclick="produto.lerDados1()"> <p> Mix 250ml +7 complementos </p><p class="preco">R$12,00</p> </li>
+                        <li onclick="produto.salvar2()" onclick="produto.lerDados2()"> <p>Mix 330ml +7 complementos</p> <p class="preco">R$15,00</p> </li>
+                        <li onclick="produto.salvar3()" onclick="produto.lerDados3()"><p>Mix 500ml +7 complementos</p> <p class="preco">R$23,00</p> </li>
+                        <li  onclick="produto.salvar4()" onclick="produto.lerDados4()">  <p>Mix 770ml +10 complementos</p> <p class="preco">R$35,00</p> </li>
+                        <li onclick="produto.salvar5()" onclick="produto.lerDados5()">  <p>Mix 1kg +10 complementos</p> <p class="preco">R$45,00</p> </li>
+                    </ul>
+                    
+                       <div class="Conteudo">
+                           <h1>Novidades e promoções</h1>
+                           <div class="Planos">
+                               <h1>Assine os planos</h1>
+                               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus enim dolorem cupiditate quia ut placeat laborum ullam provident est debitis ipsam.</p>
+                               <a href="planos.html">Acesse<i class='bx bx-right-arrow-circle bx-tada' ></i></a>
+                               <br>
+                               <br>
+                           </div>
+                           <div class="Novidades">
+                               <h1> Spotify Grátis pra você!</h1>
+                               <p>Você é assinante de algum plano? Se sim... Já está disponível na área area de membros seu login </p>
+                               <br>
+                               <h1>Você sabia que estamos chegando na sua cidade?</h1>
+                               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                           </div>
+                       </div>
+                </div>
+            </div>
+
+            <!--checkout-->
+            <div id="container-checkout" class="container-checkout">
+                <h1>Seu Pedido</h1>
+                <i id="icon-cart" class='bx bx-shopping-bag' ></i>
+                <button id="close-checkout"><i id="colorred" class="fa fa-times"></i></button>
+
+
+                <div class="box-checkout">
+                    <div class="bag" id="bag">
+
+                        <div class="content">
+                            <table border="1">
+                                <thead>
+                                    <th class="center">#</th>
+                                    <th>Produto</th>
+                                    <th>Valor</th>
+                                </thead>
+                                <tbody id="tbody">
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="imgBag" id="imgBag">
+                            <img src="imagens/bag1.png" alt="">
+                        <p class="alert-bag-vazia">Sua sacola está Vazia</p>
+                        </div>
+                        
+                    </div>
+                    <hr>
+                    <h2 class="total">Total:</h2>
+                    <h2 class="valor">R$00,00</h2>
+
+                    <div class="cupom">
+                        <p>Tem cumpom de desconto?</p>
+                        <input class="text-cupom" type="text" placeholder="Digite ele aqui...">
+                    </div>
+                    <h2 class="titulo-localização">Localização da entrega</h2>
+                    <h3 class="SubTituloLocalização">(Informe seu bairro, número da casa e ponto de referência)</h3>
+                    <input type="text" id="LocalEntrega" placeholder="Digite sua localização...">
+                    <!--<button id="btn-localização" class="localização">Selecionar</button>
+
+                    <div id="container-localização" class="select-local">
+
+                        <div class="casa">
+                            <i class='bx bx-home-heart'></i><p>Casa</p>
+                        </div>
+
+                        <div class="trabalho">
+                            <i class='bx bx-buildings'></i><p>Trabalho</p>
+                        </div>
+
+                        <div class="adicionar">
+                            <i class='bx bx-plus-circle'></i><p>Outra Localização</p>
+                        </div>
+
+                    </div>-->
+
+                    <div class="container-pagamento">
+                        <h2 class="titulo-pagamento">Forma de pagamento</h2>
+
+                        <div id="CheckCartao" class="cartão">
+                            <input type="radio"> <p>Pix/Cartão ou outro método online</p>
+                        </div>
+
+                        <div id="CheckMoney" class="dinheiro">
+                            <input type="radio"><p>Dinheiro</p>
+                        </div>
+                    </div>
+                            <div id="DinheiroHide">
+                                <p>Precisa de troco?</p>
+                                <input placeholder="Se sim, informe o valor aqui" type="text">
+                            </div>
+
+                    <h2 class="titulo-observação">Deixar Alguma Observação:</h2>
+                    <input class="observação" type="text" placeholder="Digite aqui...">
+
+                    <button class="btn-avançar">Finalizar Compra</button>
+                </div>
+
+                
+            </div>
+
+            <div id="section-carrinho" class="section-carrinho">
+                <div id="i" class="carrinho">
+                    <div id="itens">2</div>
+                    <p>Ver Carrinho</p><i class='bx bx-cart-alt'></i> 
+                </div>
+            </div>
+
+            <!--Rodapé-->
+            <div class="footer">
+                
+                <div class="main-footer">
+                    <div class="home">
+                        <a href="index.html"><i class='bx bx-home'></i> <p>Inicio</p></a>
+                    </div>
+
+                    <div id="BtnSearch" class="search"><i class='bx bx-search-alt'></i><p>Pesiqusar</p></div>
+
+                    
+                    <div id="carrinho"  class="Sacola">
+                        <div id="ItensSacola">2</div>
+                        <i id="Sacola" class='bx bx-shopping-bag bx-tada' ></i>
+                        <p id="SacolaTexto" >Sacola</p>
+                    </div>
+
+                    <div id="BtnProfile" class="user">
+                       <i class='bx bx-user'></i><p>Perfil</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Perfil-->
+            <div id="ContainerProfile" class="ContainerProfile">
+                <div id="CloseProfile"><i class="fa fa-times"></i></div>
+            </div>
+
+            <!--------Search-------->
+            <div id="ContainerSearch" class="ContainerSearch">
+                <div id="CloseSearch"><i class="fa fa-times"></i></div>
+            </div>
+
+
+            <!--Escolher os complementos-->
+        </div>
+        <div id="section-complementos">
+        
+            <div class="sair">
+                <h1 id="erro"></h1>
+                <button class="close" id="close"><i id="colorred" class="fa fa-times"></i></button>
+            </div>
+            
+            <div id="escolha-complementos">
+                
+    
+                <h2>Escolha quais acompanhamentos você deseja receber no seu Açaí</h2>
+                <h1 id="selecionado"></h1>
+                <h3 id="p1">Frutas</h3>
+                <ul id="p11">
+                    <li>
+                        <img src="imagens/complementos/morango.jpg" alt="morango">
+                        <p>Morango</p>
+                        <input type="checkbox" name="selection" id="nutela" class="checkbox">
+                    </li>
+                    <li>
+                        <img src="imagens/complementos/kiwi.jpg" alt="kiwi">
+                        <p>Kiwi</p>
+                        <input type="checkbox" name="selection" id="kiwi" class="checkbox">
+                    </li>
+                    <li>
+                        <img src="imagens/complementos/banana.jpg" alt="morango">
+                        <p>Banana</p>
+                        <input type="checkbox" name="selection" id="banana" class="checkbox">
+                    </li>
+                </ul>
+             <h3 id="p2">Diversos</h3>
+                <ul id="p22">
+                    <li>
+                        <img src="imagens/complementos/nutella.jpg" alt="morango">
+                        <p>Nutella</p>
+                        <input type="checkbox" name="selection" id="nutella" class="checkbox">
+                    </li>
+                    <li>
+                        <img src="imagens/complementos/amedoin.jpg" alt="morango">
+                        <p>Amedoin</p>
+                        <input type="checkbox" name="selection" id="amedoin" class="checkbox">
+                    </li>
+                    <li>
+                        <img src="imagens/complementos/mel.jpg" alt="morango">
+                        <p>Mel</p>
+                        <input type="checkbox" name="selection" id="mel" class="checkbox">
+                    </li>
+                    <li>
+                        <img src="imagens/complementos/paçoca.jpg" alt="morango">
+                        <p>Paçoca</p>
+                        <input type="checkbox" name="selection" id="pacoca" class="checkbox">
+                    </li>
+                    <li>
+                        <img src="imagens/complementos/bispreto.jpg" alt="morango">
+                        <p>Bis Preto</p>
+                        <input type="checkbox" name="selection" id="bis-preto" class="checkbox">
+                    </li>
+                    <li>
+                        <img src="imagens/complementos/bisbranco.png" alt="morango">
+                        <p>Bis branco</p>
+                        <input type="checkbox" name="selection" id="bis-branco" class="checkbox">
+                    </li>
+                    <li>
+                        <img src="imagens/complementos/confetes.jpg" alt="morango">
+                        <p>Confetes</p>
+                        <input type="checkbox" name="selection" id="confetes" class="checkbox">
+                    </li>
+                    <li>
+                        <img src="imagens/complementos/farinhalactea.jpeg" alt="morango">
+                        <p>Farinha láctea</p>
+                        <input type="checkbox" name="selection" id="farinha-lactea" class="checkbox">
+                    </li>
+                    <li>
+                        <img src="imagens/complementos/finibananinha.jpg" alt="morango">
+                        <p>Fini Bananinha</p>
+                        <input type="checkbox" name="selection" id="fini-bananinha" class="checkbox">
+                    </li>
+                    <li>
+                        <img src="imagens/complementos/finidentadura.jpg" alt="morango">
+                        <p>Fini Dentadura</p>
+                        <input type="checkbox" name="selection" id="fini-dentadura" class="checkbox">
+                    </li>
+                    <li>
+                        <img src="imagens/complementos/marshmallow.jpg" alt="morango">
+                        <p>Marshmallow</p>
+                        <input type="checkbox" name="selection" id="marshmallow" class="checkbox">
+                    </li>
+                    <li>
+                        <img src="imagens/complementos/gotasdechocolate.jpg" alt="morango">
+                        <p>Gotas de chocolate</p>
+                        <input type="checkbox" name="selection" id="gotas-de-chocolates" class="checkbox">
+                    </li>
+                    <li>
+                        <img src="imagens/complementos/granola.jpg" alt="morango">
+                        <p>Granola</p>
+                        <input type="checkbox" name="selection" id="granola" class="checkbox">
+                    </li>
+                    <li>
+                        <img src="imagens/complementos/jujuba.jpg" alt="morango">
+                        <p>Jujuba</p>
+                        <input type="checkbox" name="selection" id="jujuba" class="checkbox">
+                    </li>
+                    <li>
+                        <img src="imagens/complementos/kitkatpreto.jpg" alt="morango">
+                        <p>Kit Kat preto</p>
+                        <input type="checkbox" name="selection" id="kit-ket-preto" class="checkbox">
+                    </li>
+                    <li>
+                        <img src="imagens/complementos/kitkatbranco.jpg" alt="morango">
+                        <p>Kit Ket branco</p>
+                        <input type="checkbox" name="selection" id="kit-ket-branco" class="checkbox">
+                    </li>
+                    <li>
+                        <img src="imagens/complementos/leitecondensado.jpg" alt="morango">
+                        <p>Leite Condensado</p>
+                        <input type="checkbox" name="selection" id="leite-condensado" class="checkbox">
+                    </li>
+                    <li>
+                        <img src="imagens/complementos/leiteninho.jpg" alt="morango">
+                        <p>Leite ninho</p>
+                        <input type="checkbox" name="selection" id="leite-ninho" class="checkbox">
+                    </li>
+                    <li>
+                        <img src="imagens/complementos/ovomaltine.jpg" alt="morango">
+                        <p>ovomaltine</p>
+                        <input type="checkbox" name="selection" id="ovomaltine" class="checkbox">
+                    </li>
+                    <li>
+                        <img src="imagens/complementos/oreo.jpg" alt="morango">
+                        <p>Óreo</p>
+                        <input type="checkbox" name="selection" id="oreo" class="checkbox">
+                    </li>
+                    <li>
+                        <img src="imagens/complementos/sonhodevalsa.png" alt="morango">
+                        <p>Sonho de valsa</p>
+                        <input type="checkbox" name="selection" id="sonho-de-valsa" class="checkbox">
+                    </li>
+                    <li>
+                        <img src="imagens/complementos/serenatadeamor.jpg" alt="morango">
+                        <p>Serenata de amor</p>
+                        <input type="checkbox" name="selection" id="serenata-de-amor" class="checkbox">
+                    </li>
+                    <li>
+                        <img src="imagens/complementos/ourobranco.jpg" alt="morango">
+                        <p>ouro branco</p>
+                        <input type="checkbox" name="selection" id="ourobranco" class="checkbox">
+                    </li>
+                    
+    
+                </ul>
+                
+               
+                </div>
+                <div class="avancar"> <p class="error-validation tamplate"></p>
+                   
+                    <button class="btn-avancar" onclick="proximo(this)" id="proximo">Confirmar</button>
+                </div>
+                  
+        </div>
+    
+    
+        
+    </main>
+</body>
